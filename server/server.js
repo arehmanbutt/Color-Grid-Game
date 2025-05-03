@@ -23,7 +23,7 @@ io.on("connection", (socket) => {
   console.log("USER CONNECTED:", socket.id);
 
   socket.on("find_match", (data) => {
-    console.log(`🟢 [${socket.id}] Match request from: ${data.username}`);
+    console.log(`[${socket.id}] Match request from: ${data.username}`);
 
     if (waitingQueue.length > 0) {
       const opponent = waitingQueue.shift();
@@ -40,7 +40,7 @@ io.on("connection", (socket) => {
 
       io.to(opponent.socketId).emit("match_found", matchData);
       socket.emit("match_found", matchData);
-      console.log(`✅ MATCH MADE: ${opponent.username} vs ${data.username}`);
+      console.log(`MATCH MADE: ${opponent.username} vs ${data.username}`);
     } else {
       waitingQueue.push({
         username: data.username,
@@ -117,8 +117,6 @@ io.on("connection", (socket) => {
               ? player2Data.coins + 200
               : Math.max(0, player2Data.coins - 200);
         }
-
-        // await Match.create({ player1, player2, winner: draw ? null : winner });
         const match = await Match.create({
           player1,
           player2,
@@ -140,7 +138,7 @@ io.on("connection", (socket) => {
           coins: coinUpdates,
         });
       } catch (err) {
-        console.error("❌ Error in request_game_end:", err);
+        console.error("Error in request_game_end:", err);
       }
     }
   );
@@ -163,7 +161,7 @@ io.on("connection", (socket) => {
         player1: winner,
         player2: loser,
         winner,
-        grid, // ✅ Save the game state
+        grid, 
       });
 
       io.to(roomId).emit("game_end", {
@@ -177,7 +175,7 @@ io.on("connection", (socket) => {
 
       console.log(`Game forfeited. ${winner} wins`);
     } catch (err) {
-      console.error("❌ Forfeit game error:", err);
+      console.error("Forfeit game error:", err);
     }
   });
 
