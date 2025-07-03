@@ -203,10 +203,3 @@ MIT © [Your Name](https://github.com/your-username)
 ---
 
 ### 💡 Built with ❤️ for Advanced Programming – Spring 2025
-
-```
-
----
-
-Let me know if you’d like this `README.md` to include badges (e.g. GitHub Actions, Netlify/Vercel deployment, demo link), or if you're publishing it on GitHub Pages/Vercel so I can guide you through that too.
-```
