@@ -19,9 +19,9 @@ ColorGrid is a 2-player, real-time, turn-based color conquest game built using t
 
 ## 📸 Demo
 
-| Welcome | Matchmaking | Gameplay | History |
-|---------|-------------|----------|---------|
-| ![Welcome](client/public/WelcomeScreen.png) | ![Waiting](client/public/WaitingScreen.png) | ![Gameplay](client/public/GameScreen.png) | ![History](client/public/HistoryScreen.png) |
+| Welcome | Matchmaking | Gameplay |
+|---------|-------------|----------|
+| ![Welcome](client/public/WelcomeScreen.png) | ![Waiting](client/public/WaitingScreen.png) | ![Gameplay](client/public/GameScreen.png) |
 
 
 <br/>
