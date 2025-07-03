@@ -71,7 +71,7 @@ public/       # Static assets (images/screenshots)
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/colorgrid.git
+git clone https://github.com/arehmanbutt/colorgrid.git
 cd colorgrid
 ````
 
