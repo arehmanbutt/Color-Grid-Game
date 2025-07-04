@@ -32,7 +32,7 @@ ColorGrid is a 2-player, real-time, turn-based color conquest game built using t
 - React (with Hooks & Context API)
 - Vite
 - React Router
-- Socket.IO Client
+- Socket.IO
 
 **Backend:**
 - Express.js
